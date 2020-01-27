@@ -1,0 +1,47 @@
+body {
+	background: #474795;
+}
+button {
+	cursor: pointer;
+}
+input {
+	padding: 5px;
+	border: none;
+	border-bottom: 1px solid #000000;
+	width: 100%;
+}
+.err-msg {
+	border-radius: 2%;
+	font-family: segoe ui ;
+	background: #ffffff;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+	position: fixed;
+	margin: 0;
+	width: calc(40% - 50px);
+	height: auto;
+	padding: 15px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: popup 0.5s;
+}
+.err-msg button{
+	margin-top: 20px;
+	margin-right: 10px;
+	padding: 10px;
+	float: right;
+	border: none;
+	background: transparent;
+	color: #5454ad;
+	transition: 0.4s;
+}
+.err-msg button:hover{
+	background: #dedede;
+	color: #8989bd;
+}
+@keyframes popup {
+	0% {opacity: 0;}
+}
+@keyframes red-gradient {
+	0% {background: #ff0000}
+}
