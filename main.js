@@ -4,11 +4,46 @@
 // --> Unless you know what are you doing <--
 // <!> Dont delete dis <!>
 
+//listener
+var enter = document.getElementById("passin");
+enter.addEventListener("keyup", function(event){
+  if(event.keyCode === 13){
+    event.preventDefault();
+    waitverify('passin', '', 'waittill');
+  }
+})
+
+//body color changer
+function rgbToHex(rgb) {
+var hex= Number(rgb).toString(16);
+ if(hex.length<2) {
+  hex = "0" + hex;
+  }
+ return hex.toUpperCase();
+}
+function Converter(r,g,b){
+ var red = rgbToHex(r);
+ var green = rgbToHex(g);
+ var blue = rgbToHex(b);
+ return red+green+blue;
+}
+//Here... I got Headache for Solving this!
+function colorRandom(){
+var red = Math.floor(Math.random()*205)+50;
+var green = Math.floor(Math.random()*205)+50;
+var blue = Math.floor(Math.random()*205)+50;
+return "#"+Converter(red, green, blue);
+}
+setInterval(function(){
+  document.body.style.background = colorRandom();
+}, 5000);
+
+
 //count Down Time
 var backload = document.getElementById("waittill");
 var countDownDate = new Date("Nov 17, 2020 00:00:00").getTime();
 var timeback = document.getElementById("time");
-var x = setInterval(function() {
+var cdount = setInterval(function() {
   var now = new Date().getTime();
   var distance = countDownDate - now;
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -19,20 +54,37 @@ var x = setInterval(function() {
   timeback.innerHTML = days + " days , " + hours + " hours , "
   + minutes + "  minutes , " + seconds + " seconds ";
   if (distance < 0) {
-    clearInterval(x);
+    clearInterval(cdount);
+    document.getElementById("waittill").style.opacity = 0;
+    toggle("loadbox","");
     setTimeout(function(){
-    backload.style.display = "none";}, 1000)
-    timeback.innerHTML = "Happy birthday!"
+      toggle("", "waittill")}, 1000)
+    timeback.innerHTML = "ITS STARTED!"
+    startloader();
   }
 }, 1000);
 
+//loading bar
+function startloader(){
+var loadtick1 = 0, loadtick = setInterval(function(){
+  loadtick1++;
+  document.getElementById("loadprogress").style.width = loadtick1 + "%";
+  document.getElementById("loadstat").innerHTML = loadtick1+ " %";
+  if(loadtick1>99){clearInterval(loadtick);
+  document.getElementById("loadstat").innerHTML = "420.69 % Made By Qky hehe";
+    setTimeout(function(){
+    toggle('kesatu','loadbox')}, 10);}
+}, 60);}
+
 //toggle function
 function toggle(show, hide){
-  if(!show){document.getElementById(hide).style.display = "none";}
+  if(!show){document.getElementById(hide).style.opacity = 0;
+  setTimeout(function(){document.getElementById(hide).style.display = "none";},500)}
   else if(!hide){document.getElementById(show).style.display = "block";}
   else {
   document.getElementById(show).style.display = "block";
-  document.getElementById(hide).style.display = "none";
+  document.getElementById(hide).style.opacity = 0;
+  setTimeout(function(){document.getElementById(hide).style.display = "none";},500);
     }
 }
 //password verification waiting time
@@ -42,6 +94,7 @@ function waitverify(input, show, hide){
   if(inpass === password){
     console.log("access granted");
     toggle(show, hide);
+    startloader();
   }else{
     toggle('wrongpass', "")
     setTimeout(function(){

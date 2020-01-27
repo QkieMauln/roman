@@ -10,15 +10,29 @@
  	<div class="err-msg" style="z-index: 9999;">Your browser doesnt allow me to run my JavaScript, or Your Browser doesnt support JavaScript. RIP.<br/><button style="cursor: not-allowed;">Oh Fix the Browser!</button></div>
  </noscript>
  <!-- Wait till time out-->
-<div id="waittill" style="background: #000000;width: 100%;height: 100%;top:0;left:0;position: fixed;z-index: 9997;transition: 0.5s">
+<div id="waittill" style="background: #000000;width: 100%;height: 100%;top:0;left:0;position: fixed;z-index: 9997;transition: 1s">
  	<div class="err-msg" id="waitbox" style="z-index: 9999;">Hello. This file is still locked. Roman Birthday is November 17th. Please wait <b id="time"></b> Remainings.<br/><button onclick="toggle('waitpassbox', 'waitbox')">Skip Using Password</button></div>
+
 <!-- Password if clicking pass -->
- 	<div class="err-msg" id="waitpassbox" style="z-index: 9998;display: none">Please Put the Password To Bypass the Wait Time<br/><input type="password" id="passin"><br/><font size="2" style="display: none;animation: popup 0.5s" id="wrongpass" color="red">* Oops You put the wrong Password!</font><br/><button onclick="waitverify('passin', '', 'waittill');">ENTER</button><button onclick="toggle('waitbox', 'waitpassbox')">Cancel</button></div>
+ 	<div class="err-msg" id="waitpassbox" style="z-index: 9998;display: none">Please Put the Password To Bypass the Wait Time<br/><input type="password" id="passin"><br/><font size="2" style="display: none;animation: popup 0.5s" id="wrongpass" color="red">* Oops You put the wrong Password!</font><br/><button onclick="waitverify('passin', 'loadbox', 'waittill');">ENTER</button><button onclick="toggle('waitbox', 'waitpassbox')">Cancel</button></div>
+</div>
+<!-- Loading Bar -->
+	<div class="err-msg" id="loadbox" style="display: none;z-index: 9994;">Loading Some Data... <b id="loadstat">0%</b><br/><div id="loadbar"><div id="loadprogress"></div></div>
+	</div>
+
+<div class="main-boxes" id="kesatu">
+<center>
+	<h1>Sebelum Dimulai</h1>
+	<p>Assalamuallaikum Warrahmatullahi Wabarakatuh.</p>
+	<p>Sebelum pidato dimulai marilah kita panjatkan puji syukur kepada Allah SWT. atas kehadiran...</p>
+</center>
 </div>
 
+
+
+<!-- Error Shitty -->
  	<div class="err-msg"  style="display: none;">Some Romansyah Virus detected! Your device may at your own risk.<br/><button onclick="this.parentElement.style.display='none'">OK!</button></div>
- 	<h1>404 Error</h1>
- 	<p>hehe Not FOund!</p>
+
  </body>
  	<script type="text/javascript" src="main.js"></script>
 </html>
