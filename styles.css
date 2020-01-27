@@ -8,6 +8,9 @@ body {
 button {
 	cursor: pointer;
 }
+p, h1, b{
+	cursor: default;
+}
 input {
 	padding: 5px;
 	border: none;
@@ -44,6 +47,7 @@ input {
 	background: #aafd9a;
 }
 .err-msg {
+	cursor: default;
 	border-radius: 2%;
 	font-family: segoe ui ;
 	background: #ffffff;

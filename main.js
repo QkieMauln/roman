@@ -9,7 +9,7 @@ var enter = document.getElementById("passin");
 enter.addEventListener("keyup", function(event){
   if(event.keyCode === 13){
     event.preventDefault();
-    waitverify('passin', '', 'waittill');
+    waitverify('passin', 'loadbox', 'waittill');
   }
 })
 
@@ -79,12 +79,16 @@ var loadtick1 = 0, loadtick = setInterval(function(){
 //toggle function
 function toggle(show, hide){
   if(!show){document.getElementById(hide).style.opacity = 0;
-  setTimeout(function(){document.getElementById(hide).style.display = "none";},500)}
+  setTimeout(function(){
+  document.getElementById(hide).style.opacity = 1;
+  document.getElementById(hide).style.display = "none";},500)}
   else if(!hide){document.getElementById(show).style.display = "block";}
   else {
   document.getElementById(show).style.display = "block";
   document.getElementById(hide).style.opacity = 0;
-  setTimeout(function(){document.getElementById(hide).style.display = "none";},500);
+  setTimeout(function(){
+  document.getElementById(hide).style.opacity = 1;
+  document.getElementById(hide).style.display = "none";},500);
     }
 }
 //password verification waiting time
