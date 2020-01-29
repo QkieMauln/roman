@@ -33,9 +33,9 @@ var green = Math.floor(Math.random()*205)+50;
 var blue = Math.floor(Math.random()*205)+50;
 return "#"+Converter(red, green, blue);
 }
-setInterval(function(){
-  document.body.style.background = colorRandom();
-}, 5000);
+//setInterval(function(){
+//  document.body.style.background = colorRandom();
+//}, 5000);
 
 
 //count Down Time
