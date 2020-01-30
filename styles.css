@@ -27,8 +27,7 @@ input {
 	box-shadow: inset -2px -2px 2px rgba(255,255,255,0.7), inset 3px 3px 2px rgba(0,0,0,0.1);
 }
 .content{
-	animation-delay: 2s;
-	animation: insettransition 2s;
+	animation: insettransition 4s;
 	border: 1px solid #8d8d8d;
 	padding: 5px;
 	background: rgba(0,0,0,0.1);
@@ -135,8 +134,10 @@ input {
 	70%{box-shadow: -2px -2px 5px rgba(255,255,255,0.9), 3px 3px 5px rgba(0,0,0,0.2);}
 }
 @keyframes insettransition {
-	0%,40%{box-shadow: none;background: transparent;}
-	70%{box-shadow: inset -2px -2px 5px rgba(255,255,255,0.9), inset 3px 3px 5px rgba(0,0,0,0.2);}
+	0%,70%{box-shadow: none;background: transparent;color: transparent;text-shadow: none; border:none;}
+	80%{text-shadow:none;box-shadow: inset -2px -2px 5px rgba(255,255,255,0.9), inset 3px 3px 5px rgba(0,0,0,0.2);color:transparent;border:none;}
+	85%{text-shadow: 1px 1px 3px #000;border:none;}
+	90%{color: #000;}
 }
 
 .main-boxes::-webkit-scrollbar{
