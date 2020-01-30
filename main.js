@@ -40,7 +40,7 @@ return "#"+Converter(red, green, blue);
 
 //count Down Time
 var backload = document.getElementById("waittill");
-var countDownDate = new Date("Nov 17, 2020 00:00:00").getTime();
+var countDownDate = new Date("Nov 17, 2010 00:00:00").getTime();
 var timeback = document.getElementById("time");
 var cdount = setInterval(function() {
   var now = new Date().getTime();
@@ -69,6 +69,7 @@ var loadtick1 = 0, loadtick = setInterval(function(){
   loadtick1++;
   document.getElementById("loadprogress").style.width = loadtick1 + "%";
   document.getElementById("loadstat").innerHTML = loadtick1+ " %";
+  document.getElementById("loadinf").innerHTML = `Nav. User Agent : ${navigator.userAgent}`
   if(loadtick1>99){clearInterval(loadtick);
   document.getElementById("loadstat").innerHTML = "420.69 % Made By Qky hehe";
     setTimeout(function(){
