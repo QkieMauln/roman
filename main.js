@@ -93,8 +93,8 @@ function toggle(show, hide){
 }
 //password verification waiting time
 function waitverify(input, show, hide){
-  var inpass = btoa(document.getElementById(input).value),
-  password = 'cm9tYW51bHRhaA==';
+  var inpass = btoa(btoa(document.getElementById(input).value)),
+  password = 'Y205dFlXNTFiSFJoYUE9PQ==';
   if(inpass === password){
     console.log("access granted");
     toggle(show, hide);
