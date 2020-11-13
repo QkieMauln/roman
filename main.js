@@ -73,8 +73,8 @@ var loadtick1 = 0, loadtick = setInterval(function(){
   if(loadtick1>99){clearInterval(loadtick);
   document.getElementById("loadstat").innerHTML = "420.69 % Made By Qky hehe";
     setTimeout(function(){
-    toggle('kesatu','loadbox')}, 10);}
-}, 60);}
+    toggle('kesatu','loadbox')}, 1000);}
+}, 10);}
 
 //toggle function
 function toggle(show, hide){
@@ -105,4 +105,36 @@ function waitverify(input, show, hide){
       toggle('', 'wrongpass')
     }, 5000);
   }
+}
+
+function lets_go(){
+  $("body").css({"background":"#000"});
+  $("#kesatu").css({"background":"#161c30","box-shadow":"0 0 7px 1px #6bcbff,0 0 37px 5px #6bcbff,0 0 127px 1px #6bcbff"});
+  $("#fuckingo_btn").css({"background":"#161c30","bottom":"-10px"})
+  setTimeout(()=>{
+    $("#fuckingo_btn").css({"transition":"0.25s"});
+  },5000)
+}
+
+function just_fucking_go_already(){
+  var dest_a = 0;
+  $("#kesatu").css({"transition":"0.25s"});
+  setInterval(()=>{dest_a++;shakeit("#fuckingo_btn", dest_a);shakeit_calc("#kesatu", dest_a,"-50% +","-50% +");neoneff("#fuckingo_btn");neoneff("#kesatu");},100);
+  setTimeout(()=>{
+    $("#introwhiteit").show();
+    setTimeout(()=>{$("#introwhiteit").hide();toggle("kedua","kesatu")},4400);
+},1000);
+}
+
+function shakeit(docu,strength){
+  $(docu).css({"transform":`translate(${(Math.random()*strength) - (strength/2)}px, ${(Math.random()*strength) - (strength/2)}px) rotate(${(Math.random()*strength) - (strength/2)}deg)`})
+}
+
+function shakeit_calc(docu,strength, x, y){
+  $(docu).css({"transform":`translate(calc( ${x} ${(Math.random()*strength) - (strength/2)}px ), calc( ${y} ${(Math.random()*strength) - (strength/2)}px )) rotate(${(Math.random()*strength) - (strength/2)}deg)`})
+}
+
+function neoneff(docu){
+  var bruh= Math.random();
+  $(docu).css({"box-shadow":`0 0 7px 1px rgba(107, 203, 255, ${bruh}),0 0 37px 5px rgba(107, 203, 255, ${bruh}),0 0 127px 1px rgba(107, 203, 255, ${bruh})`})
 }
