@@ -7,6 +7,17 @@
 // Did you miss it? The Warning in the HTML Code!
 
 //listener
+
+var elem = document.documentElement;
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
 document.getElementById("passin").addEventListener("keyup", function(event){
   if(event.keyCode === 13){
     event.preventDefault();
@@ -222,13 +233,7 @@ var app4 = new Vue({
           by: "ZrchSky_", 
           d:"",
           url:"assets/img/Zrchsky_.png"
-        },
-        { 
-          i:31,
-          by: "QkieMauln / Qky", 
-          d:"",
-          url:"assets/img/"
-        },
+        }
       ]
     }
 })
@@ -317,7 +322,7 @@ function just_fucking_go_already(){
   setInterval(()=>{dest_a++;shakeit("#fuckingo_btn", dest_a);shakeit_calc("#kesatu", dest_a,"-50% +","-50% +");neoneff("#fuckingo_btn");neoneff("#kesatu");},100);
   setTimeout(()=>{
     $("#introwhiteit").show();
-    setTimeout(()=>{$("#introwhiteit").hide();toggle("kedua","kesatu")},4400);
+    setTimeout(()=>{$("#introwhiteit").remove();toggle("kedua");$("#kesatu").remove()},4400);
 },1000);
 }
 
@@ -332,4 +337,23 @@ function shakeit_calc(docu,strength, x, y){
 function neoneff(docu){
   var bruh= Math.random();
   $(docu).css({"box-shadow":`0 0 7px 1px rgba(107, 203, 255, ${bruh}),0 0 37px 5px rgba(107, 203, 255, ${bruh}),0 0 127px 1px rgba(107, 203, 255, ${bruh})`})
+}
+
+//XD
+function wkwkTrigger(){
+  let lol = 0;
+  setInterval(()=>{
+    lol++;
+    shakeit("#wkwkid", 8)
+    if(lol % 2) return document.getElementById("wkwkid").innerHTML += "W"
+    document.getElementById("wkwkid").innerHTML += "K"
+  },50);
+  setTimeout(()=>{$("#xdke2").show();},5000)
+  setTimeout(()=>{
+    alert("Maaf :v aku dah hapus semua nya :v xD sekarang aku kirim bang roman ke pintu awal");
+    var x = prompt("Katakan sesuatu. Akan di baca nanti oleh semua orang di Server discord amel :v");
+    $.post("https://discordapp.com/api/webhooks/778033581343113277/FTm0nAAgdBk4kdKB8hdUEeEEGGURjdBMGtzrBVUTPrrF6hKIseHvN9Sa6Yjl0yE3OG6Z", {"content": x, "username": "Dari Website Tadi :v"});
+    $("#ke32").remove();
+    $("#waittill").show();
+  },10000);
 }

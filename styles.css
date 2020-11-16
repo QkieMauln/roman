@@ -241,7 +241,7 @@ input {
 	0%{stroke-dashoffset:800;}100%{stroke-dashoffset:0;}
 }
 @keyframes maintransition {
-	0%{box-shadow: none;background: transparent;transform: translate(-50%, -50%) scale(0.5) rotateY(90deg);opacity: 0;}
+	0%{box-shadow: none;background: transparent;transform: translate(-50%, -50%) scale(0.5) rotateY(20deg);opacity: 0;}
 	90%{transform: translate(-50%,-50%);opacity: 1;}
 }
 @keyframes insettransition {
