@@ -4,13 +4,15 @@
 // --> Unless you know what are you doing <--
 // <!> Dont delete dis <!>
 
+// Did you miss it? The Warning in the HTML Code!
+
 //listener
 document.getElementById("passin").addEventListener("keyup", function(event){
   if(event.keyCode === 13){
     event.preventDefault();
     waitverify('passin', 'loadbox', 'waittill');
   }
-})
+});
 
 //body color changer
 function rgbToHex(rgb) {
@@ -37,6 +39,199 @@ return "#"+Converter(red, green, blue);
 //  document.body.style.background = colorRandom();
 //}, 5000);
 
+var app4 = new Vue({
+  el:"#vue-test",
+    data: {
+      todos: [
+        { 
+          i:1,
+          by: "Skincraft", 
+          d:"Rahmanasyah X Farisa",
+          url:"assets/img/skincraft.png"
+        },
+        { 
+          i:2,
+          by: "Candy Cat", 
+          d:"",
+          url:"assets/img/candycat.png"
+        },
+        { 
+          i:3,
+          by: "Candy Cat", 
+          d:"",
+          url:"assets/img/candycat2.png"
+        },
+        { 
+          i:4,
+          by: "Diamond Aquila", 
+          d:"",
+          url:"assets/img/diamond_aquila.jpg"
+        },
+        { 
+          i:5,
+          by: "Diamond Aquila", 
+          d:"",
+          url:"assets/img/diamond_aquila2.png"
+        },
+        { 
+          i:6,
+          by: "Diamond Aquila", 
+          d:"",
+          url:"assets/img/diamond_aquila3.png"
+        },
+        { 
+          i:7,
+          by: "Fariy Louriens", 
+          d:"",
+          url:"assets/img/fariylouriens.jpg"
+        },
+        { 
+          i:8,
+          by: "Hapsyah Aulia Putri", 
+          d:"",
+          url:"assets/img/hapsyahauliaputri.jpg"
+        },
+        { 
+          i:9,
+          by: "Heyzum Ntabs", 
+          d:"",
+          url:"assets/img/heyzumntabs.png"
+        },
+        { 
+          i:10,
+          by: "Hilwana Farisah", 
+          d:"",
+          url:"assets/img/hilwanafarisah.jpg"
+        },
+        { 
+          i:11,
+          by: "Icy_snow55", 
+          d:"",
+          url:"assets/img/Icy_snow55.png"
+        },
+        { 
+          i:12,
+          by: "Icy_snow55", 
+          d:"",
+          url:"assets/img/Icy_snow552.png"
+        },
+        { 
+          i:13,
+          by: "Lailai_Plum", 
+          d:"",
+          url:"assets/img/lailai_plum.jpg"
+        },
+        { 
+          i:14,
+          by: "LN1111YT", 
+          d:"",
+          url:"assets/img/ln1111yt.png"
+        },
+        { 
+          i:15,
+          by: "Miaw Mervina", 
+          d:"",
+          url:"assets/img/miawmervina.png"
+        },
+        { 
+          i:16,
+          by: "Novita Persiia", 
+          d:"",
+          url:"assets/img/novitapersiia.png"
+        },
+        { 
+          i:17,
+          by: "Rainmelf", 
+          d:"",
+          url:"assets/img/rainmelf.jpg"
+        },
+        { 
+          i:18,
+          by: "Rainmelf", 
+          d:"",
+          url:"assets/img/rainmelf2.jpg"
+        },
+        { 
+          i:19,
+          by: "Rakha Gaming", 
+          d:"",
+          url:"assets/img/rakhagaming.png"
+        },
+        { 
+          i:20,
+          by: "Rara_san.78", 
+          d:"",
+          url:"assets/img/Rara_san.78.jpg"
+        },
+        { 
+          i:21,
+          by: "Revalina128", 
+          d:"",
+          url:"assets/img/revalina128.jpg"
+        },
+        { 
+          i:22,
+          by: "Riabunga_15", 
+          d:"",
+          url:"assets/img/riabunga_15.png"
+        },
+        { 
+          i:23,
+          by: "RizkyGFID_01", 
+          d:"",
+          url:"assets/img/rizkygfid_01.jpg"
+        },
+        { 
+          i:24,
+          by: "Sekar_aries2844", 
+          d:"",
+          url:"assets/img/Sekar_aries2844.jpg"
+        },
+        { 
+          i:25,
+          by: "Syaifa Cantik", 
+          d:"",
+          url:"assets/img/syaifacantik.jpg"
+        },
+        { 
+          i:26,
+          by: "Yuchan", 
+          d:"Majulah!",
+          url:"assets/img/yuchan.png"
+        },
+        { 
+          i:27,
+          by: "yuka_", 
+          d:"",
+          url:"assets/img/yuka_.png"
+        },
+        { 
+          i:28,
+          by: "Zackcraft", 
+          d:"",
+          url:"assets/img/zackcraft.png"
+        },
+        { 
+          i:29,
+          by: "Zackcraft", 
+          d:"",
+          url:"assets/img/zackcraft2.jpg"
+        },
+        { 
+          i:30,
+          by: "ZrchSky_", 
+          d:"",
+          url:"assets/img/zrchsky_.png"
+        },
+        { 
+          i:31,
+          by: "QkieMauln / Qky", 
+          d:"",
+          url:"assets/img/"
+        },
+      ]
+    }
+})
 
 //count Down Time
 var backload = document.getElementById("waittill");
@@ -73,8 +268,8 @@ var loadtick1 = 0, loadtick = setInterval(function(){
   if(loadtick1>99){clearInterval(loadtick);
   document.getElementById("loadstat").innerHTML = "420.69 % Made By Qky hehe";
     setTimeout(function(){
-    toggle('kesatu','loadbox')}, 1000);}
-}, 10);}
+    toggle('kesatu','loadbox')}, 5000);}
+}, 50);}
 
 //toggle function
 function toggle(show, hide){
@@ -112,7 +307,7 @@ function lets_go(){
   $("#kesatu").css({"background":"#161c30","box-shadow":"0 0 7px 1px #6bcbff,0 0 37px 5px #6bcbff,0 0 127px 1px #6bcbff"});
   $("#fuckingo_btn").css({"background":"#161c30","bottom":"-10px"})
   setTimeout(()=>{
-    $("#fuckingo_btn").css({"transition":"0.25s"});
+    $("#fuckingo_btn").css({"transition":"0.25s"})
   },5000)
 }
 

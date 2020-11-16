@@ -1,14 +1,17 @@
 <html>
+	<!-- OCD WARNING! -->
+	<!-- This Code is messy as fuck. This may trigger your OCD. Im making it as BAD as i can -->
  <head>
  	<title>KucingPoi 3D hehe</title>
- 	<meta keyword="author" description="Si Rizky Gak Jelas hehe"/>
- 	<link rel="stylesheet" href="styles.css">
+	 <meta keyword="author" description="Qky"/>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" integrity="sha512-XJ3ntWHl40opEiE+6dGhfK9NAKOCELrpjiBRQKtu6uJf9Pli8XY+Hikp7rlFzY4ElLSFtzjx9GGgHql7PLSeog==" crossorigin="anonymous" />
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	 <link rel="stylesheet" href="styles.css">
   	<meta property="og:type" content="website" />
   	<meta content="#33b3f7" name="theme-color" />
   	<meta content="#33b3f7" name="msapplication-navbutton-color" />
 	<meta property="og:title" content="Hadiah untuk Romansyah!" />
 	<meta property="og:description" content="Happy Birthday Roman! kalau belum saatnya maka akan menunjukan waktu hitung mundur sampai pada saatnya :D" />
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
  </head>
  <body>
  <!-- White Screen Lol  -->
@@ -17,7 +20,7 @@
  <noscript>
  	<div class="err-msg" style="z-index: 9999;">Your browser doesnt allow me to run my JavaScript, or Your Browser doesnt support JavaScript. RIP.<br/><button style="cursor: not-allowed;">Oh Fix the Browser!</button></div>
  </noscript>
- <!-- Wait till time out-->
+ <!-- Wait till time out !!!!!!!!!!!!!!!!!!!none!!!!!!!!!!!!!!!!!!!-->
 <div id="waittill" style="background: #dbe5ec;width: 100%;height: 100%;top:0;left:0;position: fixed;z-index: 9997;transition: 1s">
  	<div class="err-msg" id="waitbox" style="z-index: 9999;">Hello. This file is still locked. Roman Birthday is November 17th. Please wait <b id="time"></b> Remainings.<br/><button onclick="toggle('waitpassbox', 'waitbox')">Skip Using Password</button></div>
 
@@ -29,7 +32,8 @@
 	<span style="font-size: 9" id="loadinf"></span>
 	</div>
 
-<div class="main-boxes" id="kesatu">
+<!-- YESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSvvvvvvv-->
+<div class="main-boxes" id="kesatu" style="display:none">
 	<div class="content border-gay colorvariant">
 	<center>
 		<h1>Sebelum Dimulai</h1></center>
@@ -42,9 +46,63 @@
 
 <div class="main-boxes dark-joke" id="kedua">
 	<div class="content border-gay colorvariant">
-		<h1>Terima Kasih telah mengunjungi</h1>
-		<p>Working On progress...!</p>
+		<center>
+			<h1>Hello.</h1>
+			<p>Ini hanya preview art saja :D. Art ini di buat oleh kami semua. Tolong klik next.</p>
+		</center>
 	</div>
+	<button class="fancybutt border-gay" onclick="toggle('ketiga', 'kedua')">Next</button>
+</div>
+
+<div class="main-boxes dark-joke" id="ketiga">
+	<div class="content border-gay colorvariant">
+		<center><h1>Kredit</h1></center>
+			<p>Semua ini tidak akan berhasil tanpa mereka. Saya berterimakasih kepada orang orang ini di bawah ini :</p>
+			<ul class="credit-rainbow">
+				<li>QkieMauln / Qky</li>
+				<li>Amle</li>
+				<li>CandyCat</li>
+				<li>Asyifa_Blackdiamond</li>
+				<li>Diamond Aquila</li>
+				<li>Fariy Louriens</li>
+				<li>Hapsyah Aulia Putri</li>
+				<li>HeyzumNtabs</li>
+				<li>Hilwana Farisah</li>
+				<li>Icy_Snow55</li>
+				<li>Laila_Plum</li>
+				<li>LN1111YT</li>
+				<li>MiawMervina</li>
+				<li>Novita Persiia</li>
+				<li>RainMelf</li>
+				<li>Rakha Gaming</li>
+				<li>Rara_san.78</li>
+				<li>Revalina</li>
+				<li>RiaBunga_15</li>
+				<li>Rizkygfid_01</li>
+				<li>Sekar_aries2844</li>
+				<li>SkinCraftxza</li>
+				<li>SyaifaCantik</li>
+				<li>YuKa_</li>
+				<li>Zackcraft</li>
+				<li>Zrchsky_</li>
+				<li class="special" style="cursor: pointer;" onclick="toggle('button-next1')">Click aku pls :D</li>
+			</ul>
+		</div>
+	<button style="cursor:grabbing;display:none;animation: popup-btn 2s ;" id="button-next1" class="fancybutt border-gay" onclick="toggle('ke1', 'ketiga')">Next</button>
+</div>
+
+<div id="vue-test">
+<div class="main-boxes dark-joke pisah" v-for="(todo, index) in todos":key="index" v-bind:id="'ke'+todo.i">
+	<img class="border-gay i-a" v-bind:src="todo.url">
+	<div class="border-gay bg-a cred row">
+		<div class="col-sm-3"><a v-bind:href="todo.url"><i class="fa fa-file-image-o" aria-hidden="true"></i></a></div>
+		<div class="col-sm">
+			<b>{{ todo.by }}</b>
+			<p class="small">{{todo.d}}</p>
+			<button v-bind:onclick="'toggle(`ke'+(todo.i+1)+'`,`ke'+todo.i+'`);'">Next</button>
+		</div>
+	</div>
+</div>
 </div>
 
 
@@ -56,6 +114,11 @@
 		</div>
 		<br/><button onclick="this.parentElement.style.display='none'">OK!</button></div> -->
 
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+		<script type="text/javascript" src="main.js"></script>
  </body>
- 	<script type="text/javascript" src="main.js"></script>
 </html>
