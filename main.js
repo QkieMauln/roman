@@ -65,19 +65,19 @@ var app4 = new Vue({
           i:4,
           by: "Diamond Aquila", 
           d:"",
-          url:"assets/img/Diamond_aquila.jpg"
+          url:"assets/img/Diamond_Aquila.jpg"
         },
         { 
           i:5,
           by: "Diamond Aquila", 
           d:"",
-          url:"assets/img/Diamond_aquila2.png"
+          url:"assets/img/Diamond_Aquila2.png"
         },
         { 
           i:6,
           by: "Diamond Aquila", 
           d:"",
-          url:"assets/img/Diamond_aquila3.png"
+          url:"assets/img/Diamond_Aquila3.png"
         },
         { 
           i:7,
@@ -125,7 +125,7 @@ var app4 = new Vue({
           i:14,
           by: "LN1111YT", 
           d:"",
-          url:"assets/img/LN111YT.png"
+          url:"assets/img/LN1111YT.png"
         },
         { 
           i:15,
@@ -179,7 +179,7 @@ var app4 = new Vue({
           i:23,
           by: "RizkyGFID_01", 
           d:"",
-          url:"assets/img/Rizkygfid_01.jpg"
+          url:"assets/img/rizkygfid_01.jpg"
         },
         { 
           i:24,
