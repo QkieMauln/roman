@@ -95,7 +95,7 @@
 <div class="main-boxes dark-joke pisah" v-for="(todo, index) in todos":key="index" v-bind:id="'ke'+todo.i">
 	<img class="border-gay i-a" v-bind:src="todo.url">
 	<div class="border-gay bg-a cred row">
-		<div class="col-sm-3"><a v-bind:href="todo.url"><i class="fa fa-file-image-o" aria-hidden="true"></i></a></div>
+		<div class="col-sm-3"><a target="_blank" v-bind:href="todo.url"><i class="fa fa-file-image-o" aria-hidden="true"></i></a></div>
 		<div class="col-sm">
 			<b>{{ todo.by }}</b>
 			<p class="small">{{todo.d}}</p>
