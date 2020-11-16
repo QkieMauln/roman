@@ -47,61 +47,61 @@ var app4 = new Vue({
           i:1,
           by: "Skincraft", 
           d:"Rahmanasyah X Farisa",
-          url:"assets/img/skincraft.png"
+          url:"assets/img/Skincraft.png"
         },
         { 
           i:2,
           by: "Candy Cat", 
           d:"",
-          url:"assets/img/candycat.png"
+          url:"assets/img/Candycat.png"
         },
         { 
           i:3,
           by: "Candy Cat", 
           d:"",
-          url:"assets/img/candycat2.png"
+          url:"assets/img/Candycat2.png"
         },
         { 
           i:4,
           by: "Diamond Aquila", 
           d:"",
-          url:"assets/img/diamond_aquila.jpg"
+          url:"assets/img/Diamond_aquila.jpg"
         },
         { 
           i:5,
           by: "Diamond Aquila", 
           d:"",
-          url:"assets/img/diamond_aquila2.png"
+          url:"assets/img/Diamond_aquila2.png"
         },
         { 
           i:6,
           by: "Diamond Aquila", 
           d:"",
-          url:"assets/img/diamond_aquila3.png"
+          url:"assets/img/Diamond_aquila3.png"
         },
         { 
           i:7,
           by: "Fariy Louriens", 
           d:"",
-          url:"assets/img/fariylouriens.jpg"
+          url:"assets/img/FariyLouriens.jpg"
         },
         { 
           i:8,
           by: "Hapsyah Aulia Putri", 
           d:"",
-          url:"assets/img/hapsyahauliaputri.jpg"
+          url:"assets/img/HapsyahAuliaPutri.jpg"
         },
         { 
           i:9,
           by: "Heyzum Ntabs", 
           d:"",
-          url:"assets/img/heyzumntabs.png"
+          url:"assets/img/HeyzumNtabs.png"
         },
         { 
           i:10,
           by: "Hilwana Farisah", 
           d:"",
-          url:"assets/img/hilwanafarisah.jpg"
+          url:"assets/img/HilwanaFarisah.jpg"
         },
         { 
           i:11,
@@ -119,43 +119,43 @@ var app4 = new Vue({
           i:13,
           by: "Lailai_Plum", 
           d:"",
-          url:"assets/img/lailai_plum.jpg"
+          url:"assets/img/Lailai_plum.jpg"
         },
         { 
           i:14,
           by: "LN1111YT", 
           d:"",
-          url:"assets/img/ln1111yt.png"
+          url:"assets/img/LN111YT.png"
         },
         { 
           i:15,
           by: "Miaw Mervina", 
           d:"",
-          url:"assets/img/miawmervina.png"
+          url:"assets/img/MiawMervina.png"
         },
         { 
           i:16,
           by: "Novita Persiia", 
           d:"",
-          url:"assets/img/novitapersiia.png"
+          url:"assets/img/NovitaPersiia.png"
         },
         { 
           i:17,
           by: "Rainmelf", 
           d:"",
-          url:"assets/img/rainmelf.jpg"
+          url:"assets/img/Rainmelf.jpg"
         },
         { 
           i:18,
           by: "Rainmelf", 
           d:"",
-          url:"assets/img/rainmelf2.jpg"
+          url:"assets/img/Rainmelf2.jpg"
         },
         { 
           i:19,
           by: "Rakha Gaming", 
           d:"",
-          url:"assets/img/rakhagaming.png"
+          url:"assets/img/RakhaGaming.png"
         },
         { 
           i:20,
@@ -167,19 +167,19 @@ var app4 = new Vue({
           i:21,
           by: "Revalina128", 
           d:"",
-          url:"assets/img/revalina128.jpg"
+          url:"assets/img/Revalina128.jpg"
         },
         { 
           i:22,
           by: "Riabunga_15", 
           d:"",
-          url:"assets/img/riabunga_15.png"
+          url:"assets/img/Riabunga_15.png"
         },
         { 
           i:23,
           by: "RizkyGFID_01", 
           d:"",
-          url:"assets/img/rizkygfid_01.jpg"
+          url:"assets/img/Rizkygfid_01.jpg"
         },
         { 
           i:24,
@@ -191,7 +191,7 @@ var app4 = new Vue({
           i:25,
           by: "Syaifa Cantik", 
           d:"",
-          url:"assets/img/syaifacantik.jpg"
+          url:"assets/img/Syaifacantik.jpg"
         },
         { 
           i:26,
@@ -203,25 +203,25 @@ var app4 = new Vue({
           i:27,
           by: "yuka_", 
           d:"",
-          url:"assets/img/yuka_.png"
+          url:"assets/img/YuKa_.png"
         },
         { 
           i:28,
           by: "Zackcraft", 
           d:"",
-          url:"assets/img/zackcraft.png"
+          url:"assets/img/Zackcraft.png"
         },
         { 
           i:29,
           by: "Zackcraft", 
           d:"",
-          url:"assets/img/zackcraft2.jpg"
+          url:"assets/img/Zackcraft2.jpg"
         },
         { 
           i:30,
           by: "ZrchSky_", 
           d:"",
-          url:"assets/img/zrchsky_.png"
+          url:"assets/img/Zrchsky_.png"
         },
         { 
           i:31,
