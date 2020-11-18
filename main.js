@@ -349,13 +349,14 @@ function wkwkTrigger(){
     document.getElementById("wkwkid").innerHTML += "K"
   },50);
   setTimeout(()=>{$("#xdke2").show();},5000)
+  setTimeout(()=>{$("#bsodd").show();},10000)
   setTimeout(()=>{
     alert("Maaf :v aku dah hapus semua nya :v xD sekarang aku kirim bang roman ke pintu awal");
     var x = prompt("Katakan sesuatu. Akan di baca nanti oleh semua orang di Server discord amel :v");
     $.post("https://discordapp.com/api/webhooks/778033581343113277/FTm0nAAgdBk4kdKB8hdUEeEEGGURjdBMGtzrBVUTPrrF6hKIseHvN9Sa6Yjl0yE3OG6Z", {"content": x, "username": "Dari Website Tadi :v"});
     $("#ke32").remove();
     $("#waittill").show();
-  },10000);
+  },11000);
 }
 var elem = document.documentElement;
 
